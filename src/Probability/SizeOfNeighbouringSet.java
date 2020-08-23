@@ -1,5 +1,5 @@
 /*
-        Lab01.2: Sample a chain of 5000 integers with 6 numbers (1,2,3,4,5,6) according to a given seed.
+        Lab01.2: Sample a chain of 50 integers with 6 numbers (1,2,3,4,5,6) according to a given seed.
         For any particular integer (say 1), consider only the next number in the sequence you obtained in Question 1
         (call this as the sample space for integer 1). Find out the size of each neighbour list.
         For example, suppose you have the following sequence of six numbers.
@@ -35,7 +35,6 @@ public class SizeOfNeighbouringSet {
     static int seed, lowerbound, upperbound;
     ArrayList<Integer>
             list = new ArrayList<Integer>()
-            , l0 = new ArrayList<Integer>()
             , l1 = new ArrayList<Integer>()
             , l2 = new ArrayList<Integer>()
             , l3 = new ArrayList<Integer>()
@@ -60,9 +59,7 @@ public class SizeOfNeighbouringSet {
             int n = random.nextInt(upperbound - lowerbound) + lowerbound;
             list.add(n);
 
-            if (c==0)
-                l0.add(n);
-            else if (c==1)
+            if (c==1)
                 l1.add(n);
             else if (c==2)
                 l2.add(n);
@@ -81,7 +78,6 @@ public class SizeOfNeighbouringSet {
 
     public void print(SizeOfNeighbouringSet object){
         System.out.println("Sample space: "+object.list);
-        System.out.println("List 0: "+object.l0);
         System.out.println("List 1: "+object.l1);
         System.out.println("List 2: "+object.l2);
         System.out.println("List 3: "+object.l3);
@@ -89,7 +85,7 @@ public class SizeOfNeighbouringSet {
         System.out.println("List 5: "+object.l5);
         System.out.println("List 6: "+object.l6);
         System.out.println(object.l1.size()+" "+object.l2.size()+" "+object.l3.size()+" "+object.l4.size()+" "+
-                object.l5.size()+" "+object.l6.size()+" "+object.l0.size());
+                object.l5.size()+" "+object.l6.size());
     }
 
     public static void main(String[] args) {
@@ -98,15 +94,9 @@ public class SizeOfNeighbouringSet {
         System.out.print("Enter a seed value: ");
         seed = in.nextInt();
 
-        System.out.println("Specify the range in which random numbers are to be generated");
-        System.out.print("Lower: ");
-        int lowerbound = in.nextInt();
-        System.out.print("Upper: ");
-        int upperbound = in.nextInt();
+        SizeOfNeighbouringSet object = new SizeOfNeighbouringSet(1,6);
 
-        SizeOfNeighbouringSet object = new SizeOfNeighbouringSet(lowerbound,upperbound);
-
-        object.generateLists(20);
+        object.generateLists(50);
 
         object.print(object);
     }
