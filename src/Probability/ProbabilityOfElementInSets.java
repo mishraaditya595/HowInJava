@@ -28,7 +28,6 @@ Sample a chain of 50 integers with 6 numbers (1,2,3,4,5,6) according to a given 
 
  */
 package Probability;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
