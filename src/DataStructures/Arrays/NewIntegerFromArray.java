@@ -1,5 +1,6 @@
 /*
-Given an array of integers, the task is to find whether it’s possible to construct an integer using all the digits of these numbers such that it would be divisible by 3. If it is possible then print “1” and if not print “0”.
+Given an array of integers, the task is to find whether it’s possible to construct an integer using all the digits of
+these numbers such that it would be divisible by 3. If it is possible then print “1” and if not print “0”.
 
 Input:
 First line of each test case consist of an integer n. Next line consists of n spaced integers.
@@ -26,7 +27,7 @@ Output :
 0
 
  */
-package Random;
+package DataStructures.Arrays;
 
 import java.util.Scanner;
 
