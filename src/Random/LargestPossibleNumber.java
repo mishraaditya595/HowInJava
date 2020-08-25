@@ -11,7 +11,7 @@ package Random;
 
 import java.util.Scanner;
 
-public class NumberFromNumber {
+public class LargestPossibleNumber {
 
     public String getInput(){
         Scanner scanner = new Scanner(System.in);
@@ -49,7 +49,7 @@ public class NumberFromNumber {
     }
 
     public static void main(String[] args) {
-        NumberFromNumber object = new NumberFromNumber();
+        LargestPossibleNumber object = new LargestPossibleNumber();
         String str = object.getInput();
         int[] arr = object.getArray(str);
         arr = object.sort(arr);
