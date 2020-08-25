@@ -41,7 +41,6 @@ public class LargestNumDeletingADigit {
             System.out.print(i);
     }
 
-
     public static void main(String[] args) {
         LargestNumDeletingADigit obj = new LargestNumDeletingADigit();
         obj.getInput();
