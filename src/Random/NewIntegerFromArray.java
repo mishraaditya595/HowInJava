@@ -2,7 +2,7 @@
 Given an array of integers, the task is to find whether it’s possible to construct an integer using all the digits of these numbers such that it would be divisible by 3. If it is possible then print “1” and if not print “0”.
 
 Input:
-The first line consists of an integer T i.e. the number of test cases. First line of each test case consist of an integer n. Next line consists of n spaced integers.
+First line of each test case consist of an integer n. Next line consists of n spaced integers.
 
 Output:
 Print '1' if it is possible to form a number divisible by 3 using the array elements otherwise print '0'.
@@ -13,14 +13,18 @@ Constraints:
 
 Examples:
 Input :
-2
 3
 40 50 90
-2
-1 4
 Output :
 1
 0
+
+Input:
+2
+1 4
+Output :
+0
+
  */
 package Random;
 
