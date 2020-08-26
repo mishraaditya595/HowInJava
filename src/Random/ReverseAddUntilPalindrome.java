@@ -48,7 +48,8 @@ public class ReverseAddUntilPalindrome {
         object.getInput();
         int n = 0;
         while (true){
-            if (object.checkPalindrome()) {
+            if (object.checkPalindrome())
+            {
                 System.out.println("We got the palindrome number i.e. "+object.rev+" after "+n+" trials");
                 break;
             }
