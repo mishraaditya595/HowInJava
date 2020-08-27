@@ -1,31 +1,28 @@
 /*
-Check if a String is Pangram or not.
-A pangram is a sentence containing every letter in the English Alphabet.
-Input: The quick brown fox jumps over the lazy dog
-Output: Pangram
+A pangrammatic lipogram is a text that uses every letter of the alphabet except one.
+Program to check if a string is Pangrammatic Lipogram.
 
-Input: Mary Had a Little Lamb
-Output: Not a Pangram
+Input: The quick brown fox jumped over the lazy dog.
+Output: Pangrammatic Lipogram
 
-Input: 4258 gsai
-Output: Not a Pangram
+Input:
  */
 package DataStructures.Strings;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class CheckPangram {
+public class PangrammaticLipogram {
 
     String str;
 
     public void getInput(){
         Scanner in = new Scanner(System.in);
-        System.out.print("Enter an alphabet string: ");
+        System.out.print("Enter a string: ");
         str = in.nextLine();
     }
 
-    public boolean checkPangram(){
+    public boolean checkPL(){
         ArrayList<Character> list = new ArrayList<>();
         for (int i = 0 ; i<str.length(); i++){
             char ch = str.charAt(i);
@@ -35,15 +32,15 @@ public class CheckPangram {
             if (!list.contains(ch))
                 list.add(ch);
         }
-        return list.size() == 26;
+        return list.size() == 25;
     }
 
     public static void main(String[] args) {
-        CheckPangram ob = new CheckPangram();
+        PangrammaticLipogram ob = new PangrammaticLipogram();
         ob.getInput();
-        if (ob.checkPangram())
-            System.out.println(ob.str+" is a pangram");
+        if (ob.checkPL())
+            System.out.println("Pangrammatic Lipogram");
         else
-            System.out.println(ob.str+" is not a pangram");
+            System.out.println("Not a Pangrammatic Lipogram");
     }
 }
