@@ -1,3 +1,12 @@
+/*
+Check if a String is Pangram or not.
+A pangram is a sentence containing every letter in the English Alphabet.
+Input: Abcdefghijklmnopqrstuvwxyz
+Output: Pangram
+
+Input: Abcdefghijklmnopqrstuvwxyz12
+Output: Not a Pangram
+ */
 package Strings;
 
 import java.util.Scanner;
@@ -18,7 +27,6 @@ public class CheckPangram {
             ch = Character.toLowerCase(ch);
             if (!(ch >= 97 && ch <= 122 || ch == 32))
             {
-                System.out.println(ch);
                 return false;
             }
         }
