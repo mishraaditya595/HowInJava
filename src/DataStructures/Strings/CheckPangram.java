@@ -7,8 +7,10 @@ Output: Pangram
 Input: Abcdefghijklmnopqrstuvwxyz12
 Output: Not a Pangram
  */
-package Strings;
+package DataStructures.Strings;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class CheckPangram {
@@ -22,15 +24,14 @@ public class CheckPangram {
     }
 
     public boolean checkPangram(){
+        ArrayList<Character> list = new ArrayList<>();
         for (int i = 0 ; i<str.length(); i++){
             char ch = str.charAt(i);
             ch = Character.toLowerCase(ch);
-            if (!(ch >= 97 && ch <= 122 || ch == 32))
-            {
-                return false;
-            }
+            if (!list.contains(ch))
+                list.add(ch);
         }
-        return true;
+        return list.size() == 26;
     }
 
     public static void main(String[] args) {

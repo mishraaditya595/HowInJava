@@ -7,7 +7,7 @@ Output: No duplicate alphabets found
 Input: i am geek
 Output: Duplicate alphabets found
  */
-package Strings;
+package DataStructures.Strings;
 
 import java.util.HashMap;
 import java.util.Scanner;

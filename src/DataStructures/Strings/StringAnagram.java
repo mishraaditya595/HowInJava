@@ -3,7 +3,7 @@ A string is said to be an anagram if it contains the same characters and same le
 e.g. army and Mary are anagrams.
  */
 
-package Strings;
+package DataStructures.Strings;
 
 import java.util.Arrays;
 import java.util.Scanner;
