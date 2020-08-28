@@ -7,7 +7,7 @@ Output: 6543
 Largest number out of these are 6543.
  */
 
-package Random;
+package Numbers;
 
 import java.util.Scanner;
 

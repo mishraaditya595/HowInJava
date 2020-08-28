@@ -17,7 +17,7 @@ Input: 1100 01  Output: 12
 Input: 01 01    Output: 1
  */
 
-package Random;
+package Numbers;
 
 import java.util.Scanner;
 

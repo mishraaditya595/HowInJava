@@ -8,7 +8,7 @@ The objective of the puzzle is to move the entire stack to another rod, obeying 
 2. Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack or on an empty rod.
 3. No larger disk may be placed on top of a smaller disk.
  */
-package Random;
+package Numbers;
 
 import java.util.Scanner;
 

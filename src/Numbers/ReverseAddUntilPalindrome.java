@@ -13,7 +13,7 @@ Explanation:
 6: 1136311 is palindrome. Hence, we stop here.
  */
 
-package Random;
+package Numbers;
 
 import java.util.Scanner;
 
