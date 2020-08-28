@@ -1,5 +1,5 @@
 /*
-        Lab01.2: Sample a chain of 50 integers with 6 numbers (1,2,3,4,5,6) according to a given seed.
+        Sample a chain of 50 integers with 6 numbers (1,2,3,4,5,6) according to a given seed.
         For any particular integer (say 1), consider only the next number in the sequence you obtained in Question 1
         (call this as the sample space for integer 1). Find out the size of each neighbour list.
         For example, suppose you have the following sequence of six numbers.
