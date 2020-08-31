@@ -3,7 +3,7 @@ Given a Binary number, convert it into a Hexadecimal number.
 Input: 11000010
 Output: C2
  */
-package Numbers;
+package Numbers.NumberSystemConversion;
 
 import java.util.Scanner;
 

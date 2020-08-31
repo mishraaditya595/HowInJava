@@ -3,7 +3,7 @@ Given an integer N as input in decimal format, convert it into binary without us
 Input: 25
 Output: 11001
  */
-package Numbers;
+package Numbers.NumberSystemConversion;
 
 import java.util.Scanner;
 
