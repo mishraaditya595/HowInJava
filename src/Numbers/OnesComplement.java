@@ -1,3 +1,8 @@
+/*
+Given an integer N as input, find 1's complement of N.
+Input: 5
+Output: 2
+ */
 package Numbers;
 
 import Numbers.NumberSystemConversion.Binary2Hexadecimal;
