@@ -41,7 +41,7 @@ public class PairsWithAGivenSum {
             }
         }
         ArrayList<String> pairs = new ArrayList<>();
-        for (int i: arr){
+        for (int i : arr){
             int temp = sum - i;
             if (temp>0 && map.containsKey(temp))
             {
